@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+{% block content%}
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#home">USER 1</a></li>
+		<li><a data-toggle="tab" href="#menu1">USER 2</a></li>
+		<li><a data-toggle="tab" href="#menu2">USER 3</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="home" class="tab-pane fade in active">
+			<div class="btn-group-vertical float-right ">
+				<ul class="list-group">
+					<a class="btn btn-outline-info" href="{{ url_for('addActivity') }}" style="margin-bottom: 20px">ADD ACTIVITY</a>
+					<a class="btn btn-outline-info" href="{{ url_for('editActivity') }}" style="margin-bottom: 20px">EDIT ACTIVITY</a>
+					<a class="btn btn-outline-info" href="{{ url_for('editActivity') }}" style="margin-bottom: 20px">DELETE ACTIVITY</a>
+					<a class="btn btn-outline-info" href="{{ url_for('createTemplate') }}" style="margin-bottom: 20px">CREATE NEW TEMPLATE</a>
+				</ul>
+			</div>
+			<h3>TODAY</h3>
+			<div class="container">
+				<table class="table">
+					<thead class="thead-dark">
+						<tr>
+							<th>TODAY</th>
+							<th>TOMORROW</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<link>
+							8:00am</link>
+						</td>
+						<td>8:00am</td>
+					</tr>
+					<tr>
+						<td>5:00pm</td>
+						<td>5:00pm</td>
+					</tr>
+					<tr>
+						<td>11:00pm</td>
+						<td>11:00pm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="menu1" class="tab-pane fade">
+		<h3>TODAY</h3>
+		<div class="container">
+			<table class="table">
+				<thead class="thead-dark">
+					<tr>
+						<th width="50%">TODAY</th>
+						<th width="50%">TOMORROW</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<link>
+						8:00am</link>
+					</td>
+					<td>8:00am</td>
+				</tr>
+				<tr>
+					<td>5:00pm</td>
+					<td>5:00pm</td>
+				</tr>
+				<tr>
+					<td>11:00pm</td>
+					<td>11:00pm</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div id="menu2" class="tab-pane fade">
+	<h3>TODAY</h3>
+
+	<div class="container">
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th width="50%">TODAY</th>
+					<th width="50%">TOMORROW</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<link>
+					8:00am</link>
+				</td>
+				<td>8:00am</td>
+			</tr>
+			<tr>
+				<td>5:00pm</td>
+				<td>5:00pm</td>
+			</tr>
+			<tr>
+				<td>11:00pm</td>
+				<td>11:00pm</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</div>
+</div>
+</div>
+{% endblock content%}
